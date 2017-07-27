@@ -1,3 +1,4 @@
+/* global ajaxFunctions, appUrl */
 'use strict';
 
 (function () {
