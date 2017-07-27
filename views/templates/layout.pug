@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    block head
+      title #{title} - MarkWorks Polling Engine
+      link(href="/public/css/main.css" rel="stylesheet" type="text/css")
+      link(rel="shortcut icon" href="http://markworks.net/wp-content/uploads/fbrfg/favicon.ico" type="image/x-icon")
+      
+  body
+    block header
+      header
+        p Welcome, 
+          span#display-name
+          |!
+        a.menu(href="/profile") Profile
+        p |
+          a.menu(href="/logout") Logout
+        
+    block content
+    
+    block footer
+      script(type="text/javascript" src="common/ajax-functions.js")
+      script(type="text/javascript" src="controllers/clickController.client.js")
+      script(type="text/javascript" src="controllers/userController.client.js")

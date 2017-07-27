@@ -1,0 +1,15 @@
+extends ./templates/layout.pug
+
+block content
+  div.container
+    img(src="/public/img/clementine_150.png")
+    br
+    p.clementine-text Clementine.js
+  div.container
+    p You have clicked the button 
+      span#click-nbr
+      |  times.
+    br
+    div.btn-container
+      button(type="submit").btn.btn-add CLICK ME!
+      button.btn.btn-delete RESET

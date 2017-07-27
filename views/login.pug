@@ -1,0 +1,13 @@
+extends ./templates/layout.pug
+block header
+block content
+  div.container
+    div.login
+      img(src="/public/img/clementine_150.png")
+      br
+      p.clementine-text Clementine.js
+      a(href="/auth/github")
+        div.btn#login-btn
+          img(src="/public/img/github_32px.png" alt="github logo")
+          p LOGIN WITH GITHUB
+block footer
